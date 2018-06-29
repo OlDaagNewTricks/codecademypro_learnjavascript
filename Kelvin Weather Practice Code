@@ -1,0 +1,15 @@
+//* Variable for kelvin 
+const kelvin = 0;
+
+//* Kelvin to Celcius
+const celsius = kelvin - 273;
+
+//* Celcius to Fahrenheit
+let fahrenheit = celsius * (9/5) + 32;
+fahrenheit = Math.floor(fahrenheit);
+
+//* Celsius to Newton Scale
+
+
+//* Display temperature from the variable of Kelvin into Fahrenheit
+console.log(`The Temperature is ${fahrenheit} degrees Fahrenheit.`);
