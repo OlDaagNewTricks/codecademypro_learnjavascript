@@ -1,0 +1,33 @@
+//* 
+My Dog Years Project
+
+//* Variable myAge = my age in years in a changeable variable
+let myAge = 36;
+
+//* variable for earlyYears
+let earlyYears = 2;
+
+//* reassignment of early years to diff variable
+earlyYears *= 10.5;
+
+//*  First two years accounted for so...
+laterYears = myAge - 2;
+
+//* Calculation of dog years
+laterYears *= 4
+
+//* Print earlyYears
+console.log(earlyYears);
+
+//* Print laterYears
+console.log(laterYears);
+
+//* My age in dog years
+myAgeInDogYears = earlyYears + laterYears;
+
+//* Print my name in lower case using the .toLowerCase method
+myName = 'Alan Azumbra'.toLowerCase();
+
+//* Print a string that uses the variable myName and myAgeInDogYears
+
+console.log(`My name is ${myName}.  I am ${myAgeInDogYears} years old in dog years!`);
