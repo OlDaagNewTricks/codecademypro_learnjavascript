@@ -1,2 +1,2 @@
 # codecademypro_learnjavascript
-First Practice lesson on Codecademy JavaScript Introduction
+My Practice Projects for JavaScript on Codecademy
