@@ -1,0 +1,26 @@
+//*  Codecademy Pro Learn JavaScript.  Control Flow Project "Race Day" 
+//*Random Race Number Generator
+let raceNumber = Math.floor(Math.random() * 1000);
+
+//*Did participant register early or not?
+const regEarly = true;
+
+//*Runner's Age
+const runnersAge = 18
+
+//*Control flow statement checking if runner is an adult AND registered early
+if (runnersAge > 18 && regEarly) {
+  console.log(raceNumber + 1000);
+}
+
+//*New Control flow that will check age and registration time
+if (runnersAge > 18 && regEarly) {
+  console.log(`Race Participant #${raceNumber + 1000} you are running at 9:30am.`);
+
+} else if (runnersAge > 18 && !regEarly) {
+  console.log(`Race Participant #${raceNumber + 1000} you are running at 11:00am.`);
+  
+} else if (runnersAge < 18) {
+  console.log(`You are participant #${raceNumber}.  All youths will start their race at 12:30pm`)
+  
+} else console.log(`Please see registration desk.`)
