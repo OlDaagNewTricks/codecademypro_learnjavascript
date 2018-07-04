@@ -1,0 +1,71 @@
+//* This is the coding I've done for Codecademy's Learn JavaScript Control Flow "Magic 8 Ball" project!
+
+//* Input User Name (between single quotes)
+let userName = 'Alan'
+
+userName ? console.log('Hello,' + userName + '!') : console.log('Hello!');
+
+//* Prompt user wants to ask the Magic 8-ball
+const userQuestion = 'Will I become a werewolf tonight?';
+
+//* Print the userQuestion and attach userName as well
+console.log(`${userName} asked: ${userQuestion}`);
+
+//*Random number generator
+let randomNumber = Math.floor(Math.random() * 8);
+
+//*Eightball variable
+let eightBall = '';
+
+/*
+//*Control Flow using switch method
+switch(randomNumber) {
+  case 0:
+    eightBall = 'Yes';
+    break;
+  case 1:
+    eightBall = 'Fo Sho';
+    break;
+  case 2:
+    eightBall = 'Undisputable Yes!';
+    break;
+  case 3:
+    eightBall = 'Its a sure thing';
+    break;
+  case 4:
+    eightBall = 'Problaby Not';
+    break;
+  case 5:
+    eightBall = 'Definitely Not, Sorry!';
+    break;
+  case 6:
+    eightBall = 'Possibly';
+    break;
+  case 7:
+    eightBall = 'Nothing is guaranteed in life';
+    break;
+}
+*/
+
+//*Control Flow using if/else statements
+if (randomNumber === 0) {
+  console.log('Yes');
+} else if (randomNumber ===1) {
+  console.log('Definitely');
+} else if (randomNumber ===2) {
+  console.log('Nope!');
+} else if (randomNumber ===3) {
+  console.log('You wish!');
+} else if (randomNumber ===4) {
+  console.log('My vision is cloudy on this one.');
+} else if (randomNumber ===5) {
+  console.log('Concentrate harder.  My vision is blurry on this one.');
+} else if (randomNumber ===6) {
+  console.log('Bet the house on it!');
+} else if (randomNumber ===7) {
+  console.log('I would not count on it!');
+}
+
+//*Magic 8 Balls Answers - Run multiple times to check for random answers.
+
+console.log(eightBall);
