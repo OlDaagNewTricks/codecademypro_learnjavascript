@@ -1,0 +1,72 @@
+Codecademy Learn JavaScript "Paper, Rock, Scissors" project code
+
+const getUserChoice = userInput =>
+{
+  userInput = 'bomb'
+  userInput.toLowerCase();
+  if (userInput === 'rock' || userInput === 'paper' || userInput === 'scissors' || userInput === 'bomb')
+  {
+  return userInput;
+ } else {
+   console.log('Error!');
+ }
+  
+};
+
+function getComputerChoice () {
+let randomNumber = Math.floor(Math.random()*3);
+ 
+  switch (randomNumber) {
+    case 0:
+      return 'rock';
+    case 1: 
+      return 'paper';
+    case 2: 
+      return 'scissors';
+  }
+}
+
+function determineWinner(userChoice, computerChoice) {
+  
+  if (userChoice === 'bomb')
+  	return console.log('You won! But cheated by using a cheat code!')
+  if (userChoice === computerChoice)
+    return console.log('Its a tie!')
+  
+  if (userChoice === 'rock') {
+    if (computerChoice === 'paper') {
+      return 'The computer won!';
+    } else if (computerChoice === 'scissors') {
+      return 'You won!'
+    }
+  }
+  
+  if (userChoice === 'paper') {
+    if (computerChoice === 'scissors') {
+      return 'The computer won!';
+    } else if (computerChoice === 'rock') {
+      return 'You won!';
+    }
+  }
+    
+ if (userChoice === 'scissors') {
+    if (computerChoice === 'rock') {
+      return 'The computer won!';
+    } else {
+      return 'You won!';
+    }
+ }
+}
+
+const playGame = () => {
+  const userChoice =
+      getUserChoice();
+  const computerChoice =
+      getComputerChoice();
+  		console.log(`You threw: ${userChoice}`);
+  		console.log(`The computer threw: ${computerChoice}`)
+  
+  console.log(determineWinner(userChoice, computerChoice));
+};
+
+playGame(getUserChoice, getComputerChoice);
