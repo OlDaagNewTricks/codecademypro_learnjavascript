@@ -1,0 +1,17 @@
+Codecademy Learn JavaScript "Loops" Card Selector Code
+
+//I Like this code for some reason.  Maybe because it uses a randomizer and then a while function.  
+//Then it displays the findings until the correct random card is found, and logs it to the screen.
+
+let cards = ['Diamond', 'Spade', 'Heart', 'Club'];
+
+//Under let currentCard one can change the variable to any of the random card types
+
+let currentCard = 'Heart'
+while (currentCard !== 'Spade') {
+  console.log(currentCard)
+  currentCard = 
+  cards [Math.floor(Math.random() * 4)];
+}
+
+console.log('I found a spade');
